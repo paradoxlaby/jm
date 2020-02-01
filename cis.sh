@@ -3,7 +3,7 @@
 
 # Version : 2.0.2
 # Build : Passing
-# Author : DNAPersian
+# Author : Jamal
 # Language : Bash Script
 # Check whether the root user
 if [[ $(id -u) != "0" ]]; then
@@ -140,8 +140,8 @@ function ConfigOcserv {
         certtool --generate-privkey --outfile ca-key.pem
 
         cat << _EOF_ >ca.tmpl
-cn = "DNAPersian"
-organization = "DNAPersian"
+cn = "Jamal"
+organization = "Jamal"
 serial = 1
 expiration_days = 3650
 ca
@@ -156,7 +156,7 @@ _EOF_
 
         cat << _EOF_ >server.tmpl
 cn = "IP"
-organization = "DNAPersian"
+organization = "Jamal"
 serial = 2
 expiration_days = 3650
 signing_key
